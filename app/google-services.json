@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664865539491",
+    "project_id": "doctor-from-nature",
+    "storage_bucket": "doctor-from-nature.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664865539491:android:0b1fb38fbf92d2bce64616",
+        "android_client_info": {
+          "package_name": "com.android45.doctorfromnature"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664865539491-1odd9v7103rhju3p143o9ohsfegha7q5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3u4vzMdN9OzA_GKUcwCstXBHCHLsZFG0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664865539491-1odd9v7103rhju3p143o9ohsfegha7q5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

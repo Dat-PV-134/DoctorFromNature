@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Doctor From Nature</string>
+    <string name="app_slogan">Nature itself is the best physician</string>
+    <string name="hello">Chào Đạt</string>
+    <string name="about">Chi tiết sản phẩm</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="price">Giá:</string>
+    <string name="email">Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="forgot_pass">Quên mật khẩu?</string>
+    <string name="sign_in">Đăng nhập</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="new_username">Nhập tên người dùng</string>
+    <string name="new_email">Nhập email/ SĐT</string>
+    <string name="new_password">Nhập mật khẩu</string>
+    <string name="repeat_password">Nhập lại mật khẩu</string>
+    <string name="decrease">-</string>
+    <string name="increase">+</string>
+    <string name="startValue">1</string>
+    <string name="don_vi">"₫"</string>
+    <string name="total_cart">Tổng thanh toán</string>
+    <string name="buy">Mua hàng</string>
+
+    <!--Home-->
+    <string name="search">Tìm kiếm</string>
+    <string name="New">Phổ biến</string>
+    <string name="All">Tất cả</string>
+
+    <!--icon name-->
+    <string name="icon_home">Trang chủ</string>
+    <string name="icon_favorite">Yêu thích</string>
+    <string name="icon_cart">Giỏ hàng</string>
+    <string name="icon_notification">Thông báo</string>
+    <string name="icon_me">Tôi</string>
+    <string name="profile">Hồ sơ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>
