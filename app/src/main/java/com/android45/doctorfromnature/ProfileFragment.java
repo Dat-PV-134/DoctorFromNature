@@ -35,14 +35,14 @@ public class ProfileFragment extends Fragment {
     String userID;
 
     public static ProfileFragment newInstance() {
-        
+
         Bundle args = new Bundle();
-        
+
         ProfileFragment fragment = new ProfileFragment();
         fragment.setArguments(args);
         return fragment;
     }
-    
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -53,6 +53,7 @@ public class ProfileFragment extends Fragment {
         binding.vAction.setVisibility(View.GONE);
 
         user = FirebaseAuth.getInstance().getCurrentUser();
+        assert user != null;
         binding.tvAccount.setText(user.getEmail());
 
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -63,9 +64,13 @@ public class ProfileFragment extends Fragment {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 userProfile = snapshot.getValue(UserModel.class);
 
-                binding.tvName.setText(userProfile.getName());
-
-                Glide.with(getContext()).load(userProfile.getProfileImg()).fitCenter().into(binding.imgProfile);
+                while (true) {
+                    if (userProfile != null && getContext() != null) {
+                        Glide.with(getContext()).load(userProfile.getProfileImg()).fitCenter().into(binding.imgProfile);
+                        binding.tvName.setText(userProfile.getName());
+                        break;
+                    }
+                }
 
                 binding.profileProgressBar.setVisibility(View.GONE);
                 binding.vProfile.setVisibility(View.VISIBLE);
@@ -79,44 +84,29 @@ public class ProfileFragment extends Fragment {
         });
 
 
-        binding.vChangeInfo.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), ChangeActivity.class);
-                startActivity(intent);
-            }
+        binding.vChangeInfo.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), ChangeActivity.class);
+            startActivity(intent);
         });
 
-        binding.vChangePass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), ChangePassActivity.class);
-                startActivity(intent);
-            }
+        binding.vChangePass.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), ChangePassActivity.class);
+            startActivity(intent);
         });
 
-        binding.vHistory.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), OrderedActivity.class);
-                startActivity(intent);
-            }
+        binding.vHistory.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), OrderedActivity.class);
+            startActivity(intent);
         });
 
-        binding.vAddress.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), MapsActivity.class);
-                startActivity(intent);
-            }
+        binding.vAddress.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), MapsActivity.class);
+            startActivity(intent);
         });
 
-        binding.btnLoginInProfile.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), LoginActivity.class);
-                startActivity(intent);
-            }
+        binding.btnLoginInProfile.setOnClickListener(v -> {
+            Intent intent = new Intent(getContext(), LoginActivity.class);
+            startActivity(intent);
         });
 
         return binding.getRoot();
