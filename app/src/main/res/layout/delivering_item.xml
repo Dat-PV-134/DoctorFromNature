@@ -24,16 +24,16 @@
                 android:layout_marginTop="20dp" />
 
             <TextView
-                android:layout_marginTop="5dp"
                 android:id="@+id/tvOrdersProductsName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginEnd="10dp"
                 android:layout_toEndOf="@id/imgFirstOrderProduct"
                 android:text="Tên các mặt hàng: \n +Hoa hồi khô x 3, \n +Táo tầu đỏ x 4, \n +Cây bạc hà khô x 5"
                 android:textColor="@color/black"
-                android:textSize="18sp" />
+                android:textSize="14sp" />
         </RelativeLayout>
 
         <TextView

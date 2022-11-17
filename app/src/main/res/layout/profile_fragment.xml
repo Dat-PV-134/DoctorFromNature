@@ -44,7 +44,7 @@
                 android:gravity="center"
                 android:text="@string/profile"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 android:textStyle="bold" />
         </RelativeLayout>
 
@@ -83,7 +83,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:textColor="@color/app_main_color"
-                        android:textSize="25sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/tvAccount"
@@ -93,7 +93,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp"
                         android:textColor="@color/app_main_color"
-                        android:textSize="20sp" />
+                        android:textSize="14sp" />
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -121,7 +121,7 @@
                         android:layout_toEndOf="@id/icon_address"
                         android:gravity="center"
                         android:text="Địa chỉ cửa hàng"
-                        android:textSize="25sp" />
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="40dp"
@@ -155,7 +155,7 @@
                         android:layout_toEndOf="@id/icon_history"
                         android:gravity="center"
                         android:text="Những đơn đã mua"
-                        android:textSize="25sp" />
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="40dp"
@@ -189,7 +189,7 @@
                         android:layout_toEndOf="@id/icon_fixProfile"
                         android:gravity="center"
                         android:text="Tùy chỉnh thông tin"
-                        android:textSize="25sp" />
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="40dp"
@@ -223,7 +223,7 @@
                         android:layout_toEndOf="@id/icon_changePass"
                         android:gravity="center"
                         android:text="Đổi mật khẩu"
-                        android:textSize="25sp" />
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="40dp"
@@ -256,8 +256,8 @@
                         android:layout_marginStart="10dp"
                         android:layout_toEndOf="@id/icon_chat"
                         android:gravity="center"
-                        android:text="Trò chuyện với chúng tôi"
-                        android:textSize="25sp" />
+                        android:text="Liên hệ cửa hàng"
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:layout_width="40dp"
@@ -268,17 +268,20 @@
 
                 <Button
                     android:id="@+id/btnLoginInProfile"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_below="@id/vChatWithUs"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginStart="30dp"
-                    android:layout_marginTop="60dp"
+                    android:layout_marginTop="30dp"
                     android:layout_marginEnd="30dp"
                     android:layout_marginBottom="30dp"
                     android:background="@drawable/button_add_to_cart"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="20dp"
                     android:text="Đăng xuất"
                     android:textColor="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="14sp" />
             </RelativeLayout>
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>

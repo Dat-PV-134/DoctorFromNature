@@ -59,7 +59,7 @@
                     android:layout_weight="1"
                     android:gravity="top|center"
                     android:text="@string/icon_home"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -85,7 +85,7 @@
                     android:layout_weight="1"
                     android:gravity="top|center"
                     android:text="@string/icon_favorite"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
 
@@ -113,7 +113,7 @@
                     android:layout_weight="1"
                     android:gravity="top|center"
                     android:text="@string/icon_cart"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -139,7 +139,7 @@
                     android:layout_weight="1"
                     android:gravity="top|center"
                     android:text="@string/icon_notification"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -165,7 +165,7 @@
                     android:layout_weight="1"
                     android:gravity="top|center"
                     android:text="@string/icon_me"
-                    android:textSize="15sp" />
+                    android:textSize="12sp" />
             </LinearLayout>
 
         </LinearLayout>

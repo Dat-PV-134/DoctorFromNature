@@ -89,22 +89,26 @@ public class FavoriteFragment extends Fragment {
 
         db.collection("CurrentUser").document(auth.getCurrentUser().getUid())
                 .collection("Favorite").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                if (task.isSuccessful()) {
-                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
-                        String documentId = documentSnapshot.getId();
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                                String documentId = documentSnapshot.getId();
 
-                        MyFavoriteModel model = documentSnapshot.toObject(MyFavoriteModel.class);
+                                MyFavoriteModel model = documentSnapshot.toObject(MyFavoriteModel.class);
 
-                        model.setDocumentID(documentId);
+                                model.setDocumentID(documentId);
 
-                        favoriteModels.add(model);
-                        favoriteAdapter.notifyDataSetChanged();
+                                favoriteModels.add(model);
+                                binding.tvNothingFav.setVisibility(View.GONE);
+
+                                favoriteAdapter.notifyDataSetChanged();
+                            }
+                        } else {
+                            binding.tvNothingFav.setVisibility(View.VISIBLE);
+                        }
                     }
-                }
-            }
-        });
+                });
 
         return binding.getRoot();
     }
@@ -121,11 +125,11 @@ public class FavoriteFragment extends Fragment {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
-                       Herbal herbal = document.toObject(Herbal.class);
+                        Herbal herbal = document.toObject(Herbal.class);
 
-                       bundle.putSerializable("Herbal", herbal);
-                       intent.putExtras(bundle);
-                       startActivity(intent);
+                        bundle.putSerializable("Herbal", herbal);
+                        intent.putExtras(bundle);
+                        startActivity(intent);
                     }
                 } else {
 
@@ -146,6 +150,7 @@ public class FavoriteFragment extends Fragment {
         EventBus.getDefault().unregister(this);
         super.onStop();
     }
+
     @Subscribe(sticky = true, threadMode = ThreadMode.MAIN)
     public void eventSetFav(ChangeListFavoriteEvent event) {
         if (event != null) {

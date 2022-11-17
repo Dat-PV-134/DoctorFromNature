@@ -3,6 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/drawable/button_in_dec_nofill.xml" value="0.1375" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/drawable/button_inc_dec_fill.xml" value="0.1375" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_deliver_detail.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_detail.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_home.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_order_place.xml" value="0.25" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/activity_ordered.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/cart_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/deliver_item.xml" value="0.22192028985507245" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/delivered_item.xml" value="0.22192028985507245" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/delivering_item.xml" value="0.22192028985507245" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/favorite_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/home_fragment.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/icon_herbal.xml" value="0.264" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/my_cart_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/my_favorite_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/Android/Workspace/Doctor_From_Nature/app/src/main/res/layout/profile_fragment.xml" value="0.176" />
         <entry key="..\:/Projects/DoctorFromNature/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Projects/DoctorFromNature/app/src/main/res/drawable/app_logo.xml" value="0.24177631578947367" />
         <entry key="..\:/Projects/DoctorFromNature/app/src/main/res/drawable/button_add_to_cart.xml" value="0.1" />
